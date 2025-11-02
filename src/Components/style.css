@@ -1,0 +1,292 @@
+/* Reset default browser spacing */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.sign-in {
+  background-color: #d1c2a2;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  min-height: 100vh; /* full screen height */
+  padding: 20px; /* some spacing around */
+  box-sizing: border-box;
+}
+
+/* Frame */
+.sign-in .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: #eeebeb;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 500px; /* limit width on large screens */
+  padding: 40px 25px;
+  box-sizing: border-box;
+}
+
+/* Login title */
+.sign-in .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 48px; /* reduced size for better fit */
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+/* Labels */
+.sign-in .div {
+  align-self: stretch;
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 20px; /* smaller and more readable */
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Email input */
+.sign-in .rectangle,
+.sign-in .rectangle-2 {
+  align-self: stretch;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 50px; /* smaller height */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Password input */
+.sign-in .rectangle-2 {
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.sign-in .div-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1b980;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-in .div-wrapper:hover {
+  background-color: #b99f61;
+}
+
+/* Submit text */
+.sign-in .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Make inputs and frame responsive */
+@media screen and (max-width: 600px) {
+  .sign-in .frame {
+    padding: 30px 15px;
+  }
+
+  .sign-in .text-wrapper {
+    font-size: 36px;
+  }
+
+  .sign-in .div {
+    font-size: 18px;
+  }
+
+  .sign-in .rectangle,
+  .sign-in .rectangle-2 {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .sign-in .text-wrapper-2 {
+    font-size: 20px;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+}
+.dashboard {
+  background-color: #d1c2a2;
+  min-height: 1024px;
+  min-width: 1440px;
+  position: relative;
+  width: 100%;
+}
+
+.dashboard .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 25px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 145px;
+  white-space: nowrap;
+}
+
+.dashboard .div {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 379px;
+  white-space: nowrap;
+}
+
+.dashboard .text-wrapper-2 {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 612px;
+  white-space: nowrap;
+}
+
+.dashboard .text-wrapper-3 {
+  color: #000000;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 1039px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 74px;
+  white-space: nowrap;
+}
+
+.dashboard .element {
+  aspect-ratio: 1.01;
+  height: 122px;
+  left: 893px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 129px;
+}
+
+.dashboard .frame {
+  align-items: flex-start;
+  background-color: #f8f4de;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  height: 249px;
+  left: 192px;
+  padding: 10px;
+  position: absolute;
+  top: 193px;
+  width: 647px;
+}
+
+.dashboard .welcome-to-brew {
+  color: #000000;
+  font-family: "Inknut Antiqua-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  height: 317px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -87px;
+  margin-top: -1px;
+  position: relative;
+  width: 597px;
+}
+
+.dashboard .span {
+  font-weight: 700;
+}
+
+.dashboard .text-wrapper-4 {
+  font-family: "Inknut Antiqua-SemiBold", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.dashboard .text-wrapper-5 {
+  color: #000000;
+  font-family: "Inknut Antiqua-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 236px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 551px;
+}
+
+.dashboard .espresso-br-wrapper {
+  align-items: center;
+  background-color: #f8f4de;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 210px;
+  padding: 10px;
+  position: absolute;
+  top: 658px;
+  width: 515px;
+}
+
+.dashboard .espresso-br {
+  color: #000000;
+  font-family: "Inknut Antiqua-Regular", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.dashboard .div-wrapper {
+  align-items: center;
+  background-color: #f8f4de;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  left: 764px;
+  padding: 10px;
+  position: absolute;
+  top: 658px;
+  width: 515px;
+}
+.dashboard .logout-btn {
+  align-items: center;
+  color: #000000;
+}
